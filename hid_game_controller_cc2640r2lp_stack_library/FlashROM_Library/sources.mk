@@ -115,5 +115,6 @@ OSAL \
 PROFILES \
 ROM \
 Startup \
+Startup2 \
 TOOLS \
 

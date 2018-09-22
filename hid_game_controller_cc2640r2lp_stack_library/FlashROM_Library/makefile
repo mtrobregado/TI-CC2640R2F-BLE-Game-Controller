@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.1.LTS
+CG_TOOL_ROOT := C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
@@ -35,7 +35,7 @@ ORDERED_OBJS += \
 "./ROM/rom_init.obj" \
 "./Startup/ble_user_config.obj" \
 "./Startup/icall_startup.obj" \
-"./Startup/osal_icall_ble.obj" \
+"./Startup2/osal_icall_ble.obj" \
 "./TOOLS/onboard.obj" \
 
 -include ../makefile.init
@@ -54,6 +54,7 @@ RMDIR := RMDIR /S/Q
 -include PROFILES/subdir_vars.mk
 -include ROM/subdir_vars.mk
 -include Startup/subdir_vars.mk
+-include Startup2/subdir_vars.mk
 -include TOOLS/subdir_vars.mk
 -include HAL/Common/subdir_rules.mk
 -include HAL/Target/CC2650/Drivers/subdir_rules.mk
@@ -64,6 +65,7 @@ RMDIR := RMDIR /S/Q
 -include PROFILES/subdir_rules.mk
 -include ROM/subdir_rules.mk
 -include Startup/subdir_rules.mk
+-include Startup2/subdir_rules.mk
 -include TOOLS/subdir_rules.mk
 -include objects.mk
 
@@ -180,7 +182,7 @@ hid_game_controller_cc2640r2lp_stack_library.lib: $(OBJS)
 ifneq ($(strip $(ORDERED_OBJS)),)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Archiver'
-	"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.1.LTS/bin/armar" r "hid_game_controller_cc2640r2lp_stack_library.lib" $(ORDERED_OBJS)
+	"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/bin/armar" r "hid_game_controller_cc2640r2lp_stack_library.lib" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 endif
@@ -188,13 +190,13 @@ endif
 # Other Targets
 clean:
 	-$(RM) $(LIB_OUTPUTS__QUOTED)
-	-$(RM) "HAL\Common\hal_assert.obj" "HAL\Target\CC2650\Drivers\hal_flash_wrapper.obj" "HAL\Target\CC2650\Drivers\hal_rtc_wrapper.obj" "HAL\Target\CC2650\Drivers\hal_trng_wrapper.obj" "Host\gatt_uuid.obj" "ICallBLE\ble_dispatch_JT.obj" "ICallBLE\ble_dispatch_lite.obj" "ICallBLE\icall_lite_translation.obj" "NPI\npi.obj" "OSAL\osal.obj" "OSAL\osal_bufmgr.obj" "OSAL\osal_cbtimer.obj" "OSAL\osal_clock.obj" "OSAL\osal_memory_icall.obj" "OSAL\osal_pwrmgr.obj" "OSAL\osal_snv_wrapper.obj" "OSAL\osal_timers.obj" "PROFILES\gap.obj" "PROFILES\gapbondmgr.obj" "PROFILES\gattservapp_util.obj" "PROFILES\sm_ecc.obj" "ROM\common_rom_init.obj" "ROM\rom_init.obj" "Startup\ble_user_config.obj" "Startup\icall_startup.obj" "Startup\osal_icall_ble.obj" "TOOLS\onboard.obj" 
-	-$(RM) "HAL\Common\hal_assert.d" "HAL\Target\CC2650\Drivers\hal_flash_wrapper.d" "HAL\Target\CC2650\Drivers\hal_rtc_wrapper.d" "HAL\Target\CC2650\Drivers\hal_trng_wrapper.d" "Host\gatt_uuid.d" "ICallBLE\ble_dispatch_JT.d" "ICallBLE\ble_dispatch_lite.d" "ICallBLE\icall_lite_translation.d" "NPI\npi.d" "OSAL\osal.d" "OSAL\osal_bufmgr.d" "OSAL\osal_cbtimer.d" "OSAL\osal_clock.d" "OSAL\osal_memory_icall.d" "OSAL\osal_pwrmgr.d" "OSAL\osal_snv_wrapper.d" "OSAL\osal_timers.d" "PROFILES\gap.d" "PROFILES\gapbondmgr.d" "PROFILES\gattservapp_util.d" "PROFILES\sm_ecc.d" "ROM\common_rom_init.d" "ROM\rom_init.d" "Startup\ble_user_config.d" "Startup\icall_startup.d" "Startup\osal_icall_ble.d" "TOOLS\onboard.d" 
+	-$(RM) "HAL\Common\hal_assert.obj" "HAL\Target\CC2650\Drivers\hal_flash_wrapper.obj" "HAL\Target\CC2650\Drivers\hal_rtc_wrapper.obj" "HAL\Target\CC2650\Drivers\hal_trng_wrapper.obj" "Host\gatt_uuid.obj" "ICallBLE\ble_dispatch_JT.obj" "ICallBLE\ble_dispatch_lite.obj" "ICallBLE\icall_lite_translation.obj" "NPI\npi.obj" "OSAL\osal.obj" "OSAL\osal_bufmgr.obj" "OSAL\osal_cbtimer.obj" "OSAL\osal_clock.obj" "OSAL\osal_memory_icall.obj" "OSAL\osal_pwrmgr.obj" "OSAL\osal_snv_wrapper.obj" "OSAL\osal_timers.obj" "PROFILES\gap.obj" "PROFILES\gapbondmgr.obj" "PROFILES\gattservapp_util.obj" "PROFILES\sm_ecc.obj" "ROM\common_rom_init.obj" "ROM\rom_init.obj" "Startup\ble_user_config.obj" "Startup\icall_startup.obj" "Startup2\osal_icall_ble.obj" "TOOLS\onboard.obj" 
+	-$(RM) "HAL\Common\hal_assert.d" "HAL\Target\CC2650\Drivers\hal_flash_wrapper.d" "HAL\Target\CC2650\Drivers\hal_rtc_wrapper.d" "HAL\Target\CC2650\Drivers\hal_trng_wrapper.d" "Host\gatt_uuid.d" "ICallBLE\ble_dispatch_JT.d" "ICallBLE\ble_dispatch_lite.d" "ICallBLE\icall_lite_translation.d" "NPI\npi.d" "OSAL\osal.d" "OSAL\osal_bufmgr.d" "OSAL\osal_cbtimer.d" "OSAL\osal_clock.d" "OSAL\osal_memory_icall.d" "OSAL\osal_pwrmgr.d" "OSAL\osal_snv_wrapper.d" "OSAL\osal_timers.d" "PROFILES\gap.d" "PROFILES\gapbondmgr.d" "PROFILES\gattservapp_util.d" "PROFILES\sm_ecc.d" "ROM\common_rom_init.d" "ROM\rom_init.d" "Startup\ble_user_config.d" "Startup\icall_startup.d" "Startup2\osal_icall_ble.d" "TOOLS\onboard.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
 pre-build:
-	-C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/blestack/../../../tools/blestack/lib_search/lib_search         C:/ti/ccsv8workspace/CC2640R2Fv150_Launchpad/hid_game_controller_cc2640r2lp_stack_library/TOOLS/build_config.opt         C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/blestack/blelib         C:/ti/ccsv8workspace/CC2640R2Fv150_Launchpad/hid_game_controller_cc2640r2lp_stack_library/FlashROM_Library/lib_linker.cmd         cc2640         C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/blestack/../../../tools/blestack/lib_search/lib_search.xml         C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/blestack/symbols
+	-C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/blestack/../../../tools/blestack/lib_search/lib_search         C:/ti/ccsv8workspace/CC2640R2F_LaunchpadV150/hid_game_controller_cc2640r2lp_stack_library/TOOLS/build_config.opt         C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/blestack/blelib         C:/ti/ccsv8workspace/CC2640R2F_LaunchpadV150/hid_game_controller_cc2640r2lp_stack_library/FlashROM_Library/lib_linker.cmd         cc2640         C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/blestack/../../../tools/blestack/lib_search/lib_search.xml         C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/blestack/symbols
 	-@echo ' '
 
 .PHONY: all clean dependents

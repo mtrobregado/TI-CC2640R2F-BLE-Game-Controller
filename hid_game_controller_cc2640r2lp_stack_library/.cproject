@@ -47,7 +47,7 @@
 									<listOptionValue builtIn="false" value="${SRC_BLE_DIR}/rom"/>
 									<listOptionValue builtIn="false" value="${SRC_BLE_DIR}/common/cc26xx"/>
 									<listOptionValue builtIn="false" value="${SRC_BLE_DIR}/common/cc26xx/npi/stack"/>
-									<listOptionValue builtIn="false" value="${EXAMPLE_BLE_ROOT}/src/stack"/>
+									<listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/Startup2}"/>
 									<listOptionValue builtIn="false" value="${SRC_BLE_DIR}/icall/inc"/>
 									<listOptionValue builtIn="false" value="${SRC_BLE_DIR}/profiles/roles"/>
 									<listOptionValue builtIn="false" value="${SRC_BLE_DIR}/hal/src/inc"/>
@@ -130,4 +130,5 @@
 			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="com.ti.ccstudio.core.TIGPPLanguage"/>
 		</project-mappings>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>

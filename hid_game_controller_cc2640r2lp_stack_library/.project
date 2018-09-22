@@ -311,11 +311,6 @@
 			<locationURI>SRC_BLE_DIR/common/cc26xx/icall_startup.c</locationURI>
 		</link>
 		<link>
-			<name>Startup/osal_icall_ble.c</name>
-			<type>1</type>
-			<locationURI>EXAMPLE_BLE_ROOT/src/stack/osal_icall_ble.c</locationURI>
-		</link>
-		<link>
 			<name>TOOLS/build_components.opt</name>
 			<type>1</type>
 			<locationURI>SRC_BLE_DIR/config/build_components.opt</locationURI>

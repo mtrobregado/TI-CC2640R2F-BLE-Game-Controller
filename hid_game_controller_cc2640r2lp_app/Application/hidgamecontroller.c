@@ -160,7 +160,7 @@
 #define KEY_Z_HID_BINDING                     HID_KEYBOARD_Z
 #define KEY_X_HID_BINDING                     HID_KEYBOARD_X
 
-#define USE_HID_MOUSE
+//#define USE_HID_MOUSE
 
 
 

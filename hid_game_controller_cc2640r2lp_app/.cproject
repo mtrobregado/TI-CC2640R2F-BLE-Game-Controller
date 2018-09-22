@@ -142,9 +142,9 @@
 									<listOptionValue builtIn="false" value="${SRC_BLE_DIR}/../../../source/ti/display/lib/display.aem3"/>
 									<listOptionValue builtIn="false" value="${SRC_BLE_DIR}/../../../source/ti/grlib/lib/grlib.aem3"/>
 									<listOptionValue builtIn="false" value="${SRC_BLE_DIR}/../../../source/ti/mw/lcd/lib/lcd.aem3"/>
-									<listOptionValue builtIn="false" value="${WORKSPACE_LOC}/hid_emu_kbd_cc2640r2lp_stack_library/FlashROM_Library/ble_r2.symbols"/>
-									<listOptionValue builtIn="false" value="${WORKSPACE_LOC}/hid_emu_kbd_cc2640r2lp_stack_library/FlashROM_Library/lib_linker.cmd"/>
-									<listOptionValue builtIn="false" value="${WORKSPACE_LOC}/hid_emu_kbd_cc2640r2lp_stack_library/FlashROM_Library/hid_emu_kbd_cc2640r2lp_stack_library.lib"/>
+									<listOptionValue builtIn="false" value="${WORKSPACE_LOC}/hid_game_controller_cc2640r2lp_stack_library/FlashROM_Library/ble_r2.symbols"/>
+									<listOptionValue builtIn="false" value="${WORKSPACE_LOC}/hid_game_controller_cc2640r2lp_stack_library/FlashROM_Library/lib_linker.cmd"/>
+									<listOptionValue builtIn="false" value="${WORKSPACE_LOC}/hid_game_controller_cc2640r2lp_stack_library/FlashROM_Library/hid_game_controller_cc2640r2lp_stack_library.lib"/>
 									<listOptionValue builtIn="false" value="${SRC_BLE_DIR}/common/cc26xx/ccs/cc26xx_app.cmd"/>
 									<listOptionValue builtIn="false" value="libc.a"/>
 								</option>

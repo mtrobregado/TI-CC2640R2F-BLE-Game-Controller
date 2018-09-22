@@ -1,12 +1,12 @@
 
-XOPTS = -I"C:/ti/xdctools_3_50_05_12_core/packages/" -Dxdc_target_types__=C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/kernel/tirtos/packages/ti/targets/arm/elf/std.h -Dxdc_target_name__=M3
+XOPTS = -I"C:/ti/xdctools_3_50_07_20_core/packages/" -Dxdc_target_types__=C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/kernel/tirtos/packages/ti/targets/arm/elf/std.h -Dxdc_target_name__=M3
 
 vpath % C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/kernel/tirtos/packages/ti/sysbios/
-vpath %.c C:/ti/xdctools_3_50_05_12_core/packages/
+vpath %.c C:/ti/xdctools_3_50_07_20_core/packages/
 
 CCOPTS    = --endian=little -mv7M3 --abi=eabi -q -ms --opt_for_speed=0  --program_level_compile -o3 -g --optimize_with_debug  -Dti_sysbios_knl_Task_minimizeLatency__D=FALSE -Dti_sysbios_family_arm_cc26xx_Boot_driverlibVersion=2 -Dti_sysbios_knl_Clock_stopCheckNext__D=TRUE -Dti_sysbios_family_arm_m3_Hwi_enableException__D=TRUE -Dti_sysbios_family_arm_m3_Hwi_disablePriority__D=32U -Dti_sysbios_family_arm_m3_Hwi_numSparseInterrupts__D=0U
 
-XDC_ROOT  = C:/ti/xdctools_3_50_05_12_core/packages/
+XDC_ROOT  = C:/ti/xdctools_3_50_07_20_core/packages/
 
 BIOS_ROOT = C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/kernel/tirtos/packages/ti/sysbios/
 
@@ -14,14 +14,14 @@ BIOS_DEFS =  -Dti_sysbios_BIOS_swiEnabled__D=TRUE -Dti_sysbios_BIOS_taskEnabled_
 
 BIOS_INC  = -I"C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/kernel/tirtos/packages/"
 
-INCS =  $(BIOS_INC) -I"C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/" -I"C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/kernel/tirtos/packages/" -I"C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/blestack/" -I"C:/ti/xdctools_3_50_05_12_core/packages/" -I"../" -I"/packages//" 
+INCS =  $(BIOS_INC) -I"C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/" -I"C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/kernel/tirtos/packages/" -I"C:/ti/simplelink_cc2640r2_sdk_1_50_00_58/source/ti/blestack/" -I"C:/ti/xdctools_3_50_07_20_core/packages/" -I"../" -I"/packages//" 
 
-CC = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.1.LTS/bin/armcl -c $(CCOPTS) -I C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.1.LTS/include
-ASM = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.1.LTS/bin/armcl -c $(CCOPTS) -I C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.1.LTS/include
-AR = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.1.LTS/bin/armar rq
+CC = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/bin/armcl -c $(CCOPTS) -I C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/include
+ASM = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/bin/armcl -c $(CCOPTS) -I C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/include
+AR = C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.2.LTS/bin/armar rq
 
-DEL = C:/ti/xdctools_3_50_05_12_core/packages/../bin/rm -f
-CP = C:/ti/xdctools_3_50_05_12_core/packages/../bin/cp -f
+DEL = C:/ti/xdctools_3_50_07_20_core/packages/../bin/rm -f
+CP = C:/ti/xdctools_3_50_07_20_core/packages/../bin/cp -f
 
 define RM
 	$(if $(wildcard $1),$(DEL) $1,:)

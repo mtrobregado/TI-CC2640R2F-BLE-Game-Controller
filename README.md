@@ -5,8 +5,8 @@
                         as BLE Game Controller
  Device Setup: TI CC2640R2F Launchpad + Educational BoosterPackMKII
 			   
-			   There are modifications needed to TI CC2640R2F Launchpad and 
-			   BOOSTXL-BATPAKMKII for both to work together
+There are modifications needed to TI CC2640R2F Launchpad and 
+BOOSTXL-BATPAKMKII for both to work together
 
 Need to do:
 
